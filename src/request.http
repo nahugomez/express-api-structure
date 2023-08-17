@@ -1,0 +1,19 @@
+### EXTENSIÓN REQUERIDA: REST Client
+
+### GET / --> Devuelve un mensaje (App is Running)
+GET http://localhost:1717
+
+### POST /example --> Concatena Nombre y Apellido 
+POST http://localhost:1717/example/
+Content-Type: application/json
+
+{
+    "name": "Nahuel",
+    "lastName": "Gomez"
+}
+
+### GET /example --> Devuelve un mensaje (Routing is working)
+GET http://localhost:1717/example
+
+### GET /boletin/:id --> Devuelve la información de un boletín
+GET http://localhost:1717/example/boletin/2
